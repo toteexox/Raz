@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soritune - English Pronunciation</title>
-    <style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
         :root {
             --primary-blue: #3b82f6; 
             --sidebar-bg: #2d3748;
@@ -54,7 +58,13 @@
         .eng-row span { cursor: pointer; padding: 2px 4px; border-radius: 4px; transition: 0.2s; display: inline-block; }
         .eng-row span:hover { background: #ebf8ff; color: var(--primary-blue); }
         .eng-row span.playing-word { background: var(--primary-blue) !important; color: white !important; }
-        .ipa { color: #e53e3e; font-size: 1rem; margin-top: 8px; font-family: 'Arial', sans-serif; }
+        .ipa { 
+    color: #e53e3e; 
+    font-size: 1rem; 
+    margin-top: 8px; 
+    font-family: 'Inter', -apple-system, sans-serif; /* Inter 폰트 적용 */
+    letter-spacing: 0.01em; /* 발음기호 가독성을 위한 미세 조정 */
+}
         .kor { color: #718096; font-size: 0.95rem; margin-top: 6px; font-weight: 400; }
         .hidden { display: none !important; } 
 
